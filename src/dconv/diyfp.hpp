@@ -149,7 +149,7 @@ namespace dconv
         {
             plus._mantissa = (_mantissa << 1) + 1;
             plus._exponent = _exponent - 1;
-            plus.normalizeBoundary();
+            plus.normalizeBoundary ();
 
             const bool special = __builtin_expect (_mantissa == _hiddenBit, 0);
             minus._mantissa = (_mantissa << (special ? 2 : 1)) - 1;
